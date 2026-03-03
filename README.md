@@ -1,6 +1,6 @@
 # anakin-adk
 
-Google ADK tools for web scraping, search, and research — powered by [Anakin](https://useanakin.com).
+Google ADK tools for web scraping, search, and research — powered by [Anakin](https://anakin.io).
 
 ## Installation
 

@@ -9,7 +9,7 @@ description = "Google ADK tools for web scraping, search, and research powered b
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
-authors = [{ name = "Anakin", email = "hello@useanakin.com" }]
+authors = [{ name = "Anakin", email = "hello@anakin.io" }]
 keywords = ["google-adk", "adk", "anakin", "web-scraping", "search", "ai-agent"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -35,7 +35,7 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/Anakin-Inc/anakin-adk"
-Documentation = "https://docs.useanakin.com"
+Documentation = "https://docs.anakin.io"
 Repository = "https://github.com/Anakin-Inc/anakin-adk"
 Issues = "https://github.com/Anakin-Inc/anakin-adk/issues"
 
