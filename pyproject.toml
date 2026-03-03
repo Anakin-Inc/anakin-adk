@@ -39,6 +39,9 @@ Documentation = "https://docs.anakin.io"
 Repository = "https://github.com/Anakin-Inc/anakin-adk"
 Issues = "https://github.com/Anakin-Inc/anakin-adk/issues"
 
+[tool.hatch.build.targets.sdist]
+exclude = [".env", "tests/e2e_test.py"]
+
 [tool.ruff]
 target-version = "py310"
 line-length = 100
