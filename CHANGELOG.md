@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.3 (2026-03-06)
+
+- Fix auth docs: `anakin auth` → `anakin login --api-key`
+- Add "How it works" section with architecture diagram
+- Improve tool descriptions with speed estimates
+- Add troubleshooting section
+
 ## 0.1.2 (2026-03-03)
 
 - Build configuration improvements
