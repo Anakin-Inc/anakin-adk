@@ -4,8 +4,9 @@ This agent uses the deep_research tool to autonomously explore
 the web and produce comprehensive reports on any topic.
 
 Prerequisites:
-    pip install anakin-adk anakin-cli
+    pip install anakin-adk
     export GOOGLE_API_KEY=your-key
+    export ANAKIN_API_KEY=ak-...   # free: https://anakin.io/signup
 """
 
 from google.adk.agents import Agent

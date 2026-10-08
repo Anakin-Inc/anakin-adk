@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "anakin-adk"
-version = "0.1.3"
-description = "Google ADK tools for web scraping, search, and research powered by Anakin"
+version = "0.2.0"
+description = "Google ADK tools for Anakin: web scraping, search, research, Wire actions, monitoring and AI visibility"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 authors = [{ name = "Anakin", email = "hello@anakin.io" }]
-keywords = ["google-adk", "adk", "anakin", "web-scraping", "search", "ai-agent"]
+keywords = ["google-adk", "adk", "anakin", "web-scraping", "search", "ai-agent", "wire", "monitoring"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -23,19 +23,21 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
-    "google-adk>=0.1.0",
+    "google-adk>=1.16",
+    "anakin-sdk>=0.2.0,<0.3",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=7.0",
     "pytest-asyncio>=0.21",
+    "respx>=0.21",
     "ruff>=0.4",
 ]
 
 [project.urls]
 Homepage = "https://github.com/Anakin-Inc/anakin-adk"
-Documentation = "https://docs.anakin.io"
+Documentation = "https://anakin.io/docs"
 Repository = "https://github.com/Anakin-Inc/anakin-adk"
 Issues = "https://github.com/Anakin-Inc/anakin-adk/issues"
 
@@ -47,7 +49,8 @@ target-version = "py310"
 line-length = 100
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "W"]
+select = ["E", "F", "I", "W", "B", "UP", "RUF"]
+ignore = ["E501"]  # line length is handled by `ruff format`
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"

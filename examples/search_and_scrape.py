@@ -4,8 +4,9 @@ Demonstrates combining search_web and scrape_website tools
 in a single agent for a search-then-extract workflow.
 
 Prerequisites:
-    pip install anakin-adk anakin-cli
+    pip install anakin-adk
     export GOOGLE_API_KEY=your-key
+    export ANAKIN_API_KEY=ak-...   # free: https://anakin.io/signup
 """
 
 from google.adk.agents import Agent
